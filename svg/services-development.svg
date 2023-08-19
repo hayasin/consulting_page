@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="121px" height="40px" viewBox="0 0 121 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Group 19</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Portfolio" transform="translate(-89.000000, -1470.000000)">
+            <g id="Services" transform="translate(90.000000, 689.000000)">
+                <g id="Group-26" transform="translate(0.000000, 267.000000)">
+                    <g id="Group-18" transform="translate(0.000000, 514.000000)">
+                        <g id="Group-19">
+                            <g id="Group-13" transform="translate(51.000000, 0.000000)" fill="#C0C0C9">
+                                <rect id="Rectangle" transform="translate(7.000000, 20.000000) rotate(-75.000000) translate(-7.000000, -20.000000) " x="-13" y="19" width="40" height="2"></rect>
+                                <rect id="Rectangle" transform="translate(11.000000, 20.000000) rotate(-75.000000) translate(-11.000000, -20.000000) " x="-9" y="19" width="40" height="2"></rect>
+                            </g>
+                            <polyline id="Path-2" stroke="#E5E5EC" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" points="22 11 0 21.5 22 32"></polyline>
+                            <polyline id="Path-2" stroke="#484850" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="translate(108.000000, 21.500000) rotate(-180.000000) translate(-108.000000, -21.500000) " points="119 11 97 21.5 119 32"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

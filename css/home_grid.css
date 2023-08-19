@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* UNIVERSAL */
+body {
+  height: 100vh;
+  /*background-color: #fff8e8;*/
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: 20fr 60fr 20fr;
+  grid-template-areas:
+    "top"
+    "mid"
+    "bottom";
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+/* COMPONENTS */
+
+.navbar {
+  background-color: #252528;
+  width: 100%;
+  height: 100px;
+  grid-area: top;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.row {
+  position: relative;
+  display: flex;
+}
+
+.centered-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CENTER */
+.center {
+  width: 90%;
+  height: 200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  gap: 1px;
+  grid-template-areas:
+    "first"
+    "second"
+    "third";
+}
+
+.skyline-image {
+  /* object-fit: cover; */
+  /* position: absolute; */
+  top: 5%;
+  /* transform: translate(3%, %); */
+  margin-left: 5%;
+  width: 90%;
+  margin-top: 10%;
+}
+
+/* SELLING SECTION */
+
+.selling-pitch {
+  grid-area: second;
+  position: relative;
+}
+
+.start-main {
+  grid-area: third;
+  position: relative;
+}
+
+.selling-section {
+  height: 110vh;
+  overflow: hidden;
+
+  background-color: #e5e5eb;
+  /* background-color: #252528; */
+}
+
+.selling-header {
+  margin: 150px;
+  margin-bottom: 0px;
+  align-items: end;
+  justify-content: end;
+}
+
+.selling-main-text {
+  margin-bottom: 2.5%;
+}
+
+/*SERVICES AREA */
+
+.card {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: #252528;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.card_image {
+  z-index: 2;
+  position: absolute;
+}
+
+.card:hover .card_image {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.content_card {
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.content_card:hover {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.content_card h2 {
+  position: absolute;
+  top: -80px;
+  right: 30px;
+  font-size: 8em;
+  z-index: -1;
+  color: #353539;
+}
+
+.content_card h3 {
+  font-size: 1.8em;
+  color: white;
+  z-index: 1;
+}
+
+.content_card p {
+  font-size: 1em;
+  color: white;
+  font-weight: 300;
+}
+
+/*PRINCIPLES SECTION */
+
+.principles-section {
+  background-color: #252528;
+  height: 90vh;
+}
+
+.principles-grid {
+  /* display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr, 1fr; */
+  /* background-color: red; */
+  padding-top: 10%;
+  padding-bottom: 10%;
+  height: 90vh;
+  width: 75vh;
+}
+
+.principles-box {
+  width: 100%;
+}
+
+/* TIMELINE SECTION */
+
+.timeline-section {
+  height: 100vh;
+  background-color: #e5e5eb;
+
+  display: flex;
+}
+
+.border {
+  height: 10px;
+  width: 1px;
+  background-color: #2b2d42;
+}
+
+.timeline-area {
+  margin: 90px auto;
+  width: 360px;
+  border-left: 2px solid #2b2d42;
+  padding: 0px 20px 0px 30px;
+}
+
+.timeline-items {
+  background-color: #2b2d42;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  line-height: 1.7;
+  position: relative;
+  height: 125px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+}
+
+.timeline-items:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #003049;
+  border: 3px solid #2b2d42;
+  position: absolute;
+  top: 10px;
+  left: -40px;
+}
+
+.timeline-items:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent #2b2d42 transparent transparent;
+  border-width: 8px;
+  position: absolute;
+  left: -17px;
+  top: 10px;
+}
+
+/*CONTACT SECTION*/
+.contact-section {
+  height: 70vh;
+  background-color: #252528;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*BUTTON*/
+
+button {
+  font: inherit;
+  padding: 0.75em 3em;
+  background: #fff;
+  border: 0.1em solid white;
+  border-radius: 100vw;
+  cursor: pointer;
+  transition: background-color 250ms;
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+button:hover,
+button:focus-visible {
+  background: #e5e5eb;
+}
+
+button > span {
+  position: absolute;
+  z-index: -1;
+  width: 33.333%;
+  height: 100%;
+
+  background: transparent;
+  opacity: 0.5;
+}
+
+button > :first-child {
+  left: 0;
+  top: 0;
+}
+
+button > :last-child {
+  right: 0;
+  top: 0;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #ccc;
+  /* background: hotpink; */
+  width: 10%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  inset: 0;
+  margin: auto;
+  opacity: 0;
+
+  transition: transform 1000ms 200ms, opacity 200ms;
+}
+
+button:active::before {
+  transform: scale(20);
+  opacity: 1;
+
+  transition: transform 1000ms, opacity 500ms;
+}
+
+button:has(:first-child:active)::before {
+  margin-left: 0;
+}
+
+button:has(:last-child:active)::before {
+  margin-right: 0;
+}
+
+button:has(:first-child:active)::before,
+button:has(:last-child:active)::before {
+  transition: transform 500ms, opacity 250ms;
+}

@@ -1,0 +1,77 @@
+@import url(https://use.typekit.net/zeu1nej.css);
+
+.selling-pitch {
+  font-family: "specter";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #252528;
+}
+
+.start-main {
+  font-family: "specter";
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #252528;
+  /*border: 2px solid #273043;
+  border-radius: 15px;*/
+}
+
+.navbar_text {
+  font-family: "specter";
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  margin-right: 25px;
+}
+
+.selling-main-text {
+  font-family: "specter";
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #252528;
+}
+
+.subheading {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47px;
+  color: #202022;
+}
+
+.selling-body {
+  font-family: "specter";
+  font-size: 24px;
+  color: #252528;
+  line-height: 32px;
+}
+
+/* PRODUCT MAIN TEXT */
+.product-box-header {
+  font-family: "specter";
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.product-box-body {
+  font-family: "specter";
+  font-weight: 300;
+  font-size: 1rem;
+  color: #c0c0c9;
+}
+
+.timeline-header {
+  font-family: "specter";
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.timeline-text {
+  font-family: "specter";
+  font-weight: 100;
+  font-size: 0.85rem;
+  color: white;
+}
