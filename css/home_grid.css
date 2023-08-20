@@ -130,7 +130,7 @@ ul {
 
 .card:hover .card_image {
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 
 .content_card {
@@ -141,7 +141,7 @@ ul {
   transition: 0.5s;
 }
 
-.content_card:hover {
+.card:hover .content_card {
   transform: translateY(0px);
   opacity: 1;
 }
